@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCP - Digital Notice Board - Home</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="Index.html" class="logo">UCP - Digital Notice Board</a>
+                <nav>
+                    <div class="menu-toggle" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="navMenu">
+                        <li><a href="Index.html" class="active">Home</a></li>
+                        <li><a href="Notices.html">Notices</a></li>
+                        <li><a href="Exams.html">Exams</a></li>
+                        <li><a href="Admissions.html">Admissions</a></li>
+                        <li><a href="Faculty.html">Faculty</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to University of Central Punjab</h1>
+                <p>Your gateway to academic excellence and campus information in Pakistan</p>
+                <div>
+                    <a href="Notices.html" class="btn">Latest Notices</a>
+                    <a href="Admissions.html" class="btn btn-secondary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <h2 class="section-title">Welcome to University of Central Punjab</h2>
+                <p>We are committed to providing quality education and fostering an environment of academic excellence in Pakistan. Our digital notice board serves as a centralized platform for students, faculty, and staff to stay informed about the latest updates, announcements, and important information.</p>
+                <p>With state-of-the-art facilities, experienced faculty, and a diverse student community across Pakistan, we strive to create a learning environment that prepares students for the challenges of the modern world.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our University</h2>
+            <div class="highlights">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎓</div>
+                    <h3>Quality Education</h3>
+                    <p>Comprehensive academic programs designed to meet global standards and industry requirements.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">👨‍🏫</div>
+                    <h3>Expert Faculty</h3>
+                    <p>Learn from experienced professors and industry experts dedicated to your success.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏛️</div>
+                    <h3>Modern Infrastructure</h3>
+                    <p>State-of-the-art facilities including libraries, labs, and smart classrooms.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🌍</div>
+                    <h3>Global Exposure</h3>
+                    <p>International collaborations and exchange programs to broaden your horizons.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">💼</div>
+                    <h3>Career Support</h3>
+                    <p>Dedicated placement cell and career guidance to help you achieve your goals.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎯</div>
+                    <h3>Research Focus</h3>
+                    <p>Encouraging innovation and research across various disciplines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="container">
+            <h2 class="section-title">Quick Access</h2>
+            <div class="highlights">
+                <div class="highlight-card">
+                    <h3>Academic Calendar</h3>
+                    <p>View important dates and Pakistani academic schedule</p>
+                    <a href="#" class="btn">View Calendar</a>
+                </div>
+                <div class="highlight-card">
+                    <h3>Student Portal</h3>
+                    <p>Access your grades, assignments, and Pakistani educational resources</p>
+                    <a href="#" class="btn">Login</a>
+                </div>
+                <div class="highlight-card">
+                    <h3>Library Resources</h3>
+                    <p>Explore our extensive Pakistani and international digital library collection</p>
+                    <a href="#" class="btn">Browse Library</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About UCP</h3>
+                    <p>Leading Pakistani institution of higher education committed to excellence in teaching, research, and community service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="Index.html">Home</a></p>
+                    <p><a href="Notices.html">Notices</a></p>
+                    <p><a href="Exams.html">Exams</a></p>
+                    <p><a href="Admissions.html">Admissions</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Lahore, Punjab, Pakistan</p>
+                    <p>📞 +92 (42) 111-123-456</p>
+                    <p>✉️ info@ucp.edu.pk</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Twitter</a></p>
+                    <p><a href="#">LinkedIn</a></p>
+                    <p><a href="#">Instagram</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 University of Central Punjab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

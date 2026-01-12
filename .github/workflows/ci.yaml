@@ -1,0 +1,31 @@
+name: ci-wf
+on:
+  pull_request:
+    branches:
+      - develop
+jobs:
+  lint-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome step
+        run: echo "Welcome to the Linting Job"
+      - name: Clone Repo
+        uses: actions/checkout@v6
+      - name: Install Development Dependencies
+        run: npm install
+      - name: Lint HTML and CSS Files
+        run: |
+          npx htmlhint "**/*.html"
+          npx stylelint "**/*.css"
+  build-job:
+    runs-on: ubuntu-latest
+    needs: "lint-job"
+    steps:
+      - name: "Welcome to Build Job"
+        run: echo "Welcome to build job"
+      - name: Clone Repo
+        uses: actions/checkout@v6
+      - name: Install Development Dependencies 
+        run: npm install
+      - name: Build Website with Parcel
+        run: npx parcel build "./src/index.html" --dist-dir "./dist" --public-url "./" --no-cache
